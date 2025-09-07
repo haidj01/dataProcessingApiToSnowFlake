@@ -9,7 +9,7 @@ def weather_api(lat="51.5085", lng="-0.1257", hourly="temperature_2m", models = 
     "models": models,
     }
     url = "https://api.open-meteo.com/v1/forecast"
-    resp = api_request(url,params=params)
+    resp = api_request(url=url,params=params)
     if resp:
         hourly_weather_info = resp.get("hourly")
         times = hourly_weather_info.get("time")
