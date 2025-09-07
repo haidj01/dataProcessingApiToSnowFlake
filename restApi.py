@@ -1,5 +1,4 @@
 import requests
-import json
 
 def api_request(url: str, params: dict = None):
     try:
